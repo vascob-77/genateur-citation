@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
-    <title>Template</title>
+    <title>Générateur de citation</title>
 </head>
 <body>
+
+
+    <!-- Citation -->
+    <div class="citation-container" id="citation-container">
+        <div class="citation-text">
+            <i style="color:black" class="fas fa-quote-left"></i>
+            <span id="citation"></span>
+        </div>
+
+    <!-- Auteur -->
+        <div class="citation-auteur">
+            <span id="auteur"></span>
+        </div>
+
+    <!-- Bouton -->
+        <div class="bouton-citation">
+            <button class="twitter-bouton" id="twitter" title="Tweet la citation">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button id="nouvelle-citation">Nouvelle citation</button>
+        </div>
+    </div>
     
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    
+
+    
+
 
 
 

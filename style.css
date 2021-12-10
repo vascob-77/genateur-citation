@@ -1,8 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,200&display=swap');
+
+
 html {
     box-sizing: border-box;
 }
 
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     min-height: 100vh;
+    background-color: rgb(0, 0, 0, .6);
+    background-image: url("data:image/svg+xml,%3Csvg width='76' height='18' viewBox='0 0 76 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 18c-2.43-1.824-4-4.73-4-8 0-4.418-3.582-8-8-8H0V0h20c5.523 0 10 4.477 10 10 0 4.418 3.582 8 8 8h20c4.418 0 8-3.582 8-8 0-5.523 4.477-10 10-10v2c-4.418 0-8 3.582-8 8 0 3.27-1.57 6.176-4 8H32zM64 0c-1.67 1.256-3.748 2-6 2H38c-2.252 0-4.33-.744-6-2h32z' fill='%23320083' fill-opacity='0.6' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: 'Source Sans 3', sans-serif;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: center;
+}
+
+.citation-container{
+    background-color: rgba(155, 80, 216, 0.924);
+    max-width: 900px;
+    width: auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.212);
+}
+
+.citation-text{
+    font-size: 2.75rem;
+}
+
+.longue-citation{
+    font-size: 2rem;
+}
+
+.fa-quote-left{
+    font-size: 4rem;
+}
+
+.citation-auteur{
+    margin-top:15px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: oblique 15deg;
+    color:rgba(0, 0, 0, 0.602);
+}
+
+.bouton-citation{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    background-color: #333;
+    outline: none;
+    padding: .5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+
+button:hover{
+    filter: brightness(110%);
+}
+
+button:active{
+    transform:translate(0, 0.3rem);
+}
+
+.twitter-bouton:hover{
+    color:#00acee;
+}
+
+
+.loader{
+    border: 16px solid #333;
+    margin: 0 100px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border-top: 16px solid rgba(155, 80, 216, 0.924);
+    animation: tournette 2s linear infinite;
+}
+
+@keyframes tournette{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries : Tablette / Téléphone */
+
+@media screen and (max-width: 1000px){
+    .citation-container{
+        margin: auto 20px;
+    }
+
+    .citation-text{
+        font-size: 2.5rem;
+    }
 }
