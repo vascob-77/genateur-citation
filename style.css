@@ -81,7 +81,7 @@ button:active{
 
 
 .loader{
-    border: 16px solid #333;
+    border: 16px solid rgb(54, 54, 54);
     margin: 0 100px;
     border-radius: 50%;
     width: 120px;

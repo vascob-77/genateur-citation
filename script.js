@@ -1,6 +1,6 @@
 // variable
 
-const aChangerOOOOO = document.getElementById('citation-container');
+const citationContainer = document.getElementById('citation-container');
 const texteCitation = document.getElementById('citation');
 const auteurCitation = document.getElementById('auteur');
 const btnNouvelleCitation = document.getElementById('nouvelle-citation');
@@ -14,11 +14,11 @@ let apiCitation = [];
 
 function chargement(){
     loader.hidden = false;
-    aChangerOOOOO.hidden = true;
+    citationContainer.hidden = true;
 }
 
 function chargementComplet(){
-    aChangerOOOOO.hidden = false;
+    citationContainer.hidden = false;
     loader.hidden = true;
 }
 
@@ -83,7 +83,7 @@ btnTwitter.addEventListener('click', () => {
     tweetCitation();
 })
 
-// chargement();
+//chargement();
 
 getCitation();
 
